@@ -1,14 +1,15 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 
-class AnimationPage extends StatefulWidget {
-  const AnimationPage({Key? key}) : super(key: key);
+class ImplicitAnimation extends StatefulWidget {
+  static const routeName = '/implicit-animation';
+  const ImplicitAnimation({Key? key}) : super(key: key);
 
   @override
-  State<AnimationPage> createState() => _AnimationPageState();
+  State<ImplicitAnimation> createState() => _ImplicitAnimationState();
 }
 
-class _AnimationPageState extends State<AnimationPage> {
+class _ImplicitAnimationState extends State<ImplicitAnimation> {
   double _size = 100.0;
   bool animation = false;
   final Tween<double> _animationTween1 = Tween(begin: 0, end: pi * 2);
